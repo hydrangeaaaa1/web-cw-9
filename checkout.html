@@ -16,17 +16,19 @@
         <title> Request</title>
       </head>
 </head>
-<body>
+<body onload="doShowAll()">
     <div>
         <ul id="cart"></ul>
         <h5>total =</h5>
         <h1 id="total">" 0KD "</h1>
+        <table id="list"></table>
       </div>
       <button class="btn btn-primary" onclick="checkout()">checkout</button>
         <script>
             function checkout(){
             alert("your order is being freshly prepared ");   
-            clearCart();
+            // clearCart();
+            ClearAll();
 
             }
         </script>
